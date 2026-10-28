@@ -4,18 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>快速操作指南 Quick Start Guide</title>
-<script>
-/* 移除平台注入的第三方脚本与品牌元素，保持页面纯净 */
-(function () {
-  function purge() {
-    document.querySelectorAll('script[src*="kimi"], link[href*="kimi"], [class*="kimi-brand"], [id*="kimi-brand"], a[href*="kimi.com"]').forEach(function (e) { e.remove(); });
-  }
-  purge();
-  new MutationObserver(purge).observe(document.documentElement, { childList: true, subtree: true });
-})();
-</script>
 <style>
-  [class*="kimi-brand"], [id*="kimi-brand"] { display: none !important; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
